@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: []
+  providers: [],
+  declarations: [
+  ]
 })
 export class AppModule { }
