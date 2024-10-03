@@ -1,37 +1,27 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
-interface WeatherForecast {
-  date: string;
-  temperatureC: number;
-  temperatureF: number;
-  summary: string;
-}
+import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { HeroesComponent } from './heroes/heroes.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    HeroesComponent
+  ]
 })
 export class AppComponent implements OnInit {
-  public forecasts: WeatherForecast[] = [];
+  title = 'Tour of Heroes';
+  forecasts: any;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.getForecasts();
-  }
-
-  getForecasts() {
-    this.http.get<WeatherForecast[]>('/weatherforecast').subscribe({
-      next: (result) => {
-        this.forecasts = result;
-      },
-      error: (error) => {
-        console.error(error);
-      }
+    this.http.get('/weatherforecast').subscribe(data => {
+      this.forecasts = data;
     });
   }
-
-  title = 'Tour of Heroes';
 }
