@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\tourofheroswebapp.client\tourofheroswebapp.client.esproj">
+    <ProjectReference Include="..\tourofheroswebapp.client\tourofheroeswebapp.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

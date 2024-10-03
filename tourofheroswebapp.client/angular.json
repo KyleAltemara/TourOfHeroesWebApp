@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tourofheroswebapp.client": {
+    "tourofHeroeswebapp.client": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/tourofheroswebapp.client",
+            "outputPath": "dist/tourofHeroeswebapp.client",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "tourofheroswebapp.client:build:production"
+              "buildTarget": "tourofHeroeswebapp.client:build:production"
             },
             "development": {
-              "buildTarget": "tourofheroswebapp.client:build:development"
+              "buildTarget": "tourofHeroeswebapp.client:build:development"
             }
           },
           "defaultConfiguration": "development",
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "tourofheroswebapp.client:build"
+            "buildTarget": "tourofHeroeswebapp.client:build"
           }
         },
         "test": {
