@@ -1,27 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
-import { HeroesComponent } from './heroes/heroes.component';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  standalone: true,
-  imports: [
-    CommonModule,
-    HeroesComponent
-  ]
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'Tour of Heroes';
-  forecasts: any;
-
-  constructor(private http: HttpClient) {}
-
-  ngOnInit() {
-    this.http.get('/weatherforecast').subscribe(data => {
-      this.forecasts = data;
-    });
-  }
 }
