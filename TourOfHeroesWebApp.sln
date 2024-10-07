@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourOfHeroesWebApp.Server", "TourOfHerosWebApp.Server\TourOfHeroesWebApp.Server.csproj", "{06C997B8-D0D2-4E34-9D5C-EE86987AB553}"
-EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "tourofheroeswebapp.client", "tourofheroswebapp.client\tourofheroeswebapp.client.esproj", "{F5542832-DFF0-4A08-A778-10B1739DFF06}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{06C997B8-D0D2-4E34-9D5C-EE86987AB553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06C997B8-D0D2-4E34-9D5C-EE86987AB553}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06C997B8-D0D2-4E34-9D5C-EE86987AB553}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06C997B8-D0D2-4E34-9D5C-EE86987AB553}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F5542832-DFF0-4A08-A778-10B1739DFF06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F5542832-DFF0-4A08-A778-10B1739DFF06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5542832-DFF0-4A08-A778-10B1739DFF06}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
